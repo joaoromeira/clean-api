@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": [
+      "es6"
+    ],
+    "allowJs": true,
+    "outDir": "./lib",
+    "rootDir": "./src",
+    "removeComments": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/@types"
+    ],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": [
+        "./src/*"
+      ],
+      "@db/*": [
+        "./src/infrastructure/database/mongodb/*"
+      ],
+      "@logger": [
+        "./src/vendor/logger/index.ts"
+      ],
+      "@s3/*": [
+        "./src/vendor/s3/*"
+      ],
+      "@models": [
+        "./src/domain/models"
+      ],
+      "@infrastructure/*": [
+        "./src/infrastructure/*"
+      ],
+      "@dtos/*": [
+        "./src/domain/dtos/*"
+      ],
+      "@constants": [
+        "./src/main/constants/index.ts"
+      ],
+      "@controllers/*": [
+        "./src/application/controllers/*"
+      ],
+      "@security/*": [
+        "./src/application/security/*"
+      ],
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

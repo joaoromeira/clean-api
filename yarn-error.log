@@ -1,0 +1,96 @@
+Arguments: 
+  /Users/joao/.nvm/versions/node/v14.19.1/bin/node /opt/homebrew/Cellar/yarn/1.22.17_2/libexec/bin/yarn.js
+
+PATH: 
+  /Users/joao/google-cloud-sdk/bin:/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/3.0.0/bin:/opt/homebrew/bin:/Users/joao/.nvm/versions/node/v14.19.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.19.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/typescript: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/opt/homebrew/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:141510:19)
+      at Object.onceWrapper (events.js:519:28)
+      at ClientRequest.emit (events.js:400:28)
+      at TLSSocket.emitRequestTimeout (_http_client.js:790:9)
+      at Object.onceWrapper (events.js:519:28)
+      at TLSSocket.emit (events.js:412:35)
+      at TLSSocket.Socket._onTimeout (net.js:495:8)
+      at listOnTimeout (internal/timers.js:557:17)
+      at processTimers (internal/timers.js:500:7)
+
+npm manifest: 
+  {
+    "name": "drh-api",
+    "version": "1.0.1",
+    "main": "src/index.ts",
+    "license": "MIT",
+    "engines": {
+      "node": "14.x"
+    },
+    "scripts": {
+      "build": "tsc",
+      "dev": "nodemon",
+      "lint": "eslint --fix src/",
+      "start": "nodemon"
+    },
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "body-parser": "1.19.0",
+      "cors": "2.8.5",
+      "dayjs": "1.10.7",
+      "dotenv": "10.0.0",
+      "ejs": "3.1.6",
+      "express": "4.17.1",
+      "express-async-errors": "3.1.1",
+      "faker": "5.5.3",
+      "html-to-text": "8.1.0",
+      "jsonwebtoken": "8.5.1",
+      "juice": "8.0.0",
+      "nodemailer": "6.7.2",
+      "tslog": "3.2.2",    
+      "uuid": "8.3.2"
+    },
+    "devDependencies": {
+      "@types/bcrypt": "^5.0.0",
+      "@types/cors": "^2.8.12",
+      "@types/ejs": "^3.1.0",
+      "@types/express": "^4.17.13",
+      "@types/express-serve-static-core": "^4.17.25",
+      "@types/faker": "^5.5.9",
+      "@types/html-to-text": "^8.0.1",
+      "@types/jsonwebtoken": "^8.5.5",
+      "@types/node": "^16.11.11",
+      "@types/nodemailer": "^6.4.4",
+      "@types/nodemailer-express-handlebars": "^4.0.2",
+      "@types/uuid": "^8.3.4",
+      "@typescript-eslint/eslint-plugin": "^4.15.0",
+      "@typescript-eslint/parser": "^4.15.0",
+      "eslint": "^7.6.0",
+      "eslint-config-airbnb-base": "^14.2.1",
+      "eslint-config-prettier": "^7.2.0",
+      "eslint-import-resolver-typescript": "^2.5.0",
+      "eslint-plugin-import": "^2.22.0",
+      "eslint-plugin-prettier": "^3.3.1",
+      "eslint-plugin-promise": "^4.2.1",
+      "nodemon": "^2.0.15",
+      "prettier": "^2.4.1",
+      "pretty-quick": "^3.1.2",
+      "ts-node": "^10.9.1",
+      "ts-node-dev": "^2.0.0",
+      "tsconfig-paths": "^3.11.0",
+      "typescript": "^4.4.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
